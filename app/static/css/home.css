@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(145deg, #ece9e6, #ffffff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeBody 1s ease-in;
+  }
+  
+  @keyframes fadeBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .container {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    animation: floatIn 1.5s ease-out;
+  }
+  
+  @keyframes floatIn {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  h1.fade-in {
+    color: #4caf50;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  .subtitle.slide-in {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: slideIn 1.2s ease-in;
+  }
+  
+  @keyframes slideIn {
+    0% { transform: translateX(-30px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  #contador {
+    font-size: 64px;
+    margin: 20px 0;
+    color: #ff5722;
+  }
+  
+  .contador-pulso {
+    animation: pulse 1s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+  }
+  
+  .botoes button {
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease;
+  }
+  
+  .botoes button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+  }
+  
